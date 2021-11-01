@@ -12,6 +12,12 @@ Data scraper process:
     * Uses the pricing variable to convert to costs.
     * Combines the annual data and costs into grouped dataframe.
     * Exports annual data to CSV.
-    * Performs calculation of % savings from base case.
+*Determines the delta from base case (existing) conditions.
+    * Establish dataframes for each condition.
+    * Merges these dfs.
+    * Performs delta calculations and adds columns to df.
+    * Exports grouped df to CSV.
+    * Repeats this for peak demand, but first found the day/hour of the peak performer.
+
 
 <img src="static/images/zone.png" alt="Zone defined in COMFEN">
