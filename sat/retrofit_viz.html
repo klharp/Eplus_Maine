@@ -64,13 +64,13 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="annual_viz.html">Annual Energy</a>
+                            <a class="dropdown-item" href="retrofit_viz.html">Annual Energy Savings</a>
                             <a class="dropdown-item" href="peak_viz.html">Peak Energy</a>
-                            <a class="dropdown-item" href="retrofit_viz.html">Retrofit Info</a>
                             <a class="dropdown-item" href="data.html">Data</a>
                         </div>
                     </li>
                 </ul>
-            </div>s
+            </div>
         </div>
     </nav>
 
@@ -91,43 +91,55 @@
             <div class="row margin-top-50">
                 <div class="col-lg-10 mx-auto">
                     <center>
-                        <h2>Annual Energy of hotel in San Antonio, TX</h2>
+                        <h2>Annual Carbon and Energy Savings in San Antonio, TX</h2>
                     </center>
                     <p>
-                        The annual energy in kBtus and costs in dollars for commercial office and residential spaces are
-                        displayed per window system for each orientation.</p>
+                        The annual energy in kBtus and costs in dollars for commercial office and residential
+                        spaces are displayed per window system for each orientation.
+                    </p>
                     <p>
-                        The annual difference in energy, cost, EUI, and Carbon (equivalent) for each window system
-                        compared to a base case (existing window
-                        system) is also displayed.
+                        The annual difference in energy, cost, EUI, and Carbon (equivalent) for each window
+                        system compared to a base case (existing window system) is also displayed.
                     </p>
                 </div>
             </div>
         </div>
-    </section>S
+    </section>
 
 
 
 
-    <!-- ANNUAL ENERGY SECTION-->
-    <section id="satAnnualViz">
+    <!-- ANNUAL CLEAR DELTA SECTION-->
+    <section id="satRetroViz">
         <div class="container text-center">
             <div class="row margin-top-50">
                 <div class="col-lg-10 mx-auto">
-                    <div class="annualviz">
+                    <div class="satRetroViz">
 
-                        <script type='text/javascript'
-                            src='https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'></script>
-                        <div class='tableauPlaceholder' style='width: 1000px; height: 1427px;'><object
-                                class='tableauViz' width='1000' height='1427' style='display:none;'>
-                                <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
+                        <div class='tableauPlaceholder' id='viz1635885940978' style='position: relative'><noscript><a
+                                    href='#'><img alt='Clear '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sa&#47;satAnnualDeltaClear&#47;Clear&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                 <param name='embed_code_version' value='3' />
-                                <param name='site_root' value='&#47;t&#47;harpdesign' />
-                                <param name='name' value='satAnnual&#47;EnergyUseIntensity' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='satAnnualDeltaClear&#47;Clear' />
                                 <param name='tabs' value='no' />
-                                <param name='toolbar' value='no' />
-                                <param name='showAppBanner' value='false' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sa&#47;satAnnualDeltaClear&#47;Clear&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
                             </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1635885940978'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '777px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+
 
                     </div>
                 </div>
@@ -135,19 +147,77 @@
         </div>
     </section>
 
+    <!-- TOOLBAR SECTION: covers tableau toolbar. Need to set the height of the previous div to 27 pixels smaller than the Tableau container-->
+    <section id="toolbatr">
+        <div class="container text-center">
+            <div class="row margin-top-10">
+                <div class="col-lg-10 mx-auto">
+                    <img src="../static/images/toolbar.png">
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <!-- ANNUAL LOWE DELTA SECTION-->
+    <section id="satRetroViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="satRetroViz">
+
+                        <div class='tableauPlaceholder' id='viz1635886257841' style='position: relative'><noscript><a
+                                    href='#'><img alt='lowE '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sa&#47;satAnnualDeltaLowe&#47;lowE&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='satAnnualDeltaLowe&#47;lowE' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sa&#47;satAnnualDeltaLowe&#47;lowE&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1635886257841'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '777px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLBAR SECTION: covers tableau toolbar. Need to set the height of the previous div to 27 pixels smaller than the Tableau container-->
+    <section id="toolbatr">
+        <div class="container text-center">
+            <div class="row margin-top-10">
+                <div class="col-lg-10 mx-auto">
+                    <img src="../static/images/toolbar.png">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FLOOR PLAN SECTION-->
     <section id="floorplan">
         <div class="container text-center">
-            <div class="row margin-top-50">
+            <div class="row margin-top-10">
                 <div class="col-lg-6 mx-auto">
                     <img src="../static/images/building_parts.png">
                 </div>
             </div>
         </div>
     </section>
-
 
 
 

@@ -32,6 +32,30 @@ body {
   height: 940px;
 }
 
+#satAnnualViz {
+  position: relative;
+  height: 1400px;
+  width: 100%;
+}
+
+#satPeakViz {
+  position: relative;
+  height: 800px;
+  width: 100%;
+}
+
+#satRetroViz {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+#DataViz {
+  position: relative;
+  /* height: 1050px; */
+  width: 100%;
+}
+
 #houAnnualViz {
   position: relative;
   /* height: 1050px; */
