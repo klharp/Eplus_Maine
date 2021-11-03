@@ -63,9 +63,13 @@
                             Visualize
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="annual_viz.html">Annual Energy (Office)</a>
+                            <a class="dropdown-item" href="annual_viz.html">Annual Energy (Commercial)</a>
                             <a class="dropdown-item" href="annual_viz_res.html">Annual Energy (Residential)</a>
-                            <a class="dropdown-item" href="data_com.html">Data (Office)</a>
+                            <a class="dropdown-item" href="retrofit_viz.html">Annual Energy Savings (Commercial)</a>
+                            <a class="dropdown-item" href="retrofit_viz_res.html">Annual Savings (Residential)</a>
+                            <a class="dropdown-item" href="peak_viz.html">Peak Energy (Commercial)</a>
+                            <a class="dropdown-item" href="peak_viz_res.html">Peak Energy (Residential)</a>
+                           <a class="dropdown-item" href="data_com.html">Data (Commercial)</a>
                             <a class="dropdown-item" href="data_res.html">Data (Residential)</a>
                         </div>
                     </li>
@@ -92,59 +96,43 @@
             <div class="row margin-top-50">
                 <div class="col-lg-10 mx-auto">
                     <center>
-                        <h2>Simulation Data</h2>
+                        <h2>Simulation Data (Commercial)</h2>
                     </center>
 
-                    <div class="col-md-12" style="width:900px; overflow-x:auto;">
+                    <div class="col-md-12" style="width:1200px; overflow-x:auto;">
                         <div id="table-area" class="">
                           <table id="sat-table" class="table table-striped">
                             <thead>
                               <tr>
                                 <th class="table-head">Scenario</th>
-                                <th class="table-head">Fan<br />Energy<br />(kBtu)</th>
                                 <th class="table-head">Elevation</th>
                                 <th class="table-head">Glazing<br />System</th>
-                                <th class="table-head">Heating<br />ElecEnergy<br />(kBtu)</th>
-                                <th class="table-head">Heating<br />GasEnergy<br />(kBtu)</th>
+                                <th class="table-head">Fan<br />Energy<br />(kBtu)</th>
+                                <th class="table-head">Heating<br />Elec Energy<br />(kBtu)</th>
+                                <th class="table-head">Heating<br />Gas Energy<br />(kBtu)</th>
                                 <th class="table-head">Cooling<br />Energy<br />(kBtu)</th>
                                 <th class="table-head">Lighting<br />Energy<br />(kBtu)</th>
+                                <th class="table-head">Annual<br />Energy<br />(kBtu)</th>
                                 <th class="table-head">Fan<br />Energy<br />(kBtu/sf)</th>
-                                <th class="table-head">Heating<br />ElecEnergy<br />(kBtu/sf)</th>
-                                <th class="table-head">Heating<br />GasEnergy<br />(kBtu/sf)</th>
+                                <th class="table-head">Heating<br />Elec Energy<br />(kBtu/sf)</th>
+                                <th class="table-head">Heating<br />Gas Energy<br />(kBtu/sf)</th>
                                 <th class="table-head">Cooling<br />Energy<br />(kBtu/sf)</th>
                                 <th class="table-head">Lighting<br />Energy<br />(kBtu/sf)</th>
                                 <th class="table-head">EUI<br />(kBtu/sf)</th>
                                 <th class="table-head">CO2<br />Electric<br />(lb/sf)</th>
+                                <th class="table-head">CO2<br />Gas<br />(lb/sf)</th>
                                 <th class="table-head">FanCost<br />($)</th>
-                                <th class="table-head">Heating<br />ElecCost<br />($)</th>
-                                <th class="table-head">Heating<br />GasCost<br />($)</th>
+                                <th class="table-head">Heating<br />Elec Cost<br />($)</th>
+                                <th class="table-head">Heating<br />Gas Cost<br />($)</th>
                                 <th class="table-head">Cooling<br />Cost<br />($)</th>
                                 <th class="table-head">Lighting<br />Cost<br />($)</th>
-                                <th class="table-head">Annual<br />Energy<br />(kBtu)</th>
-                                <th class="table-head">Annual<br />Cost<br />($)</th>
-                                <th class="table-head">B_Fan<br />Energy<br />(kBtu)</th>
-                                <th class="table-head">B_Heating<br />ElecEnergy<br />(kBtu)</th>
-                                <th class="table-head">B_Heating<br />GasEnergy<br />(kBtu)</th>
-                                <th class="table-head">B_Cooling<br />Energy<br />(kBtu)</th>
-                                <th class="table-head">B_Lighting<br />Energy<br />(kBtu)</th>
-                                <th class="table-head">B_Fan<br />Energy<br />(kBtu/sf)</th>
-                                <th class="table-head">B_Heating<br />ElecEnergy<br />(kBtu/sf)</th>
-                                <th class="table-head">B_Heating<br />GasEnergy<br />(kBtu/sf)</th>
-                                <th class="table-head">B_Cooling<br />Energy<br />(kBtu/sf)</th>
-                                <th class="table-head">B_Lighting<br />Energy<br />(kBtu/sf)</th>
-                                <th class="table-head">B_EUI<br />(kBtu/sf)</th>
-                                <th class="table-head">B_CO2_<br />Electric<br />(lb/sf)<br /></th>
-                                <th class="table-head">B_Fan<br />Energy<br />($)</th>
-                                <th class="table-head">B_Heating<br />ElecCost($)</th>
-                                <th class="table-head">B_Heating<br />GasCost($)</th>
-                                <th class="table-head">B_Cooling<br />Cost<br />($)</th>
-                                <th class="table-head">B_Lighting<br />Cost<br />($)</th>
-                                <th class="table-head">B_Annual<br />Energy<br />(kBtu)</th>
-                                <th class="table-head">B_Annual<br />Cost<br />($)</th>
-                                <th class="table-head">deltaEnergy<br />(kBtu))</th>
-                                <th class="table-head">deltaEUI<br />(kBtu/sf)</th>
-                                <th class="table-head">deltaCO2Elec<br />(lb/sf)</th>
-                                <th class="table-head">deltaCost<br />($)</th>
+                                <th class="table-head">Annual<br />Cost($)</th>
+                                <th class="table-head">Fan<br />Cost($/sf)</th>
+                                <th class="table-head">Heating<br />Elec Cost($/sf)</th>
+                                <th class="table-head">Heating<br />Gas Cost($/sf)</th>
+                                <th class="table-head">Cooling<br />Cost($/sf)</th>
+                                <th class="table-head">Lighting<br />Cost($/sf)</th>
+                                <th class="table-head">Annual<br />Cost($/sf)</th>
                             </tr>
                             </thead>
                             <tbody></tbody>

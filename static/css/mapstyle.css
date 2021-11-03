@@ -56,9 +56,27 @@ body {
   width: 100%;
 }
 
-#DataViz {
+#cleAnnualViz {
   position: relative;
-  /* height: 1050px; */
+  height: 1200px;
+  width: 100%;
+}
+
+#clePeakViz {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+#cleRetroViz {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+#cleRetroViz2 {
+  position: relative;
+  height: 700px;
   width: 100%;
 }
 
