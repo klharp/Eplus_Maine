@@ -50,6 +50,12 @@ body {
   width: 100%;
 }
 
+#satRetroViz2 {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
 #DataViz {
   position: relative;
   /* height: 1050px; */
