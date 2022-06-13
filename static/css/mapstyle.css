@@ -117,11 +117,19 @@ body {
 }
 
 
-#mspMarriottAnnualViz {
+#mspMarriottAnnualViz1 {
+  position: relative;
+  height: 1300px;
+  width: 100%;
+}
+
+
+#mspMarriottAnnualViz2 {
   position: relative;
   /* height: 2550px; */
   width: 100%;
 }
+
 
 #mspMarriottPeakViz1 {
   position: relative;
