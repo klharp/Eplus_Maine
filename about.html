@@ -58,7 +58,6 @@
                         </div>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -78,6 +77,7 @@
         <div class="container">
             <div class="row margin-top-50">
                 <div class="col-lg-10 mx-auto">
+
                     <h2>Methodology</h2>
                     <p>Simulations were done in EnergyPlus (v 9.5). Zones and window systems were defined in Lawrence
                         Berkeley National Laboratory's <a href="https://windows.lbl.gov/software/comfen"
@@ -96,28 +96,18 @@
                         implementation that may limit its usefulness for specific design projects.
                     </p>
                     <ul>
-                        <li>COMFEN is not a whole-building energy modeler. It is intended to get comparative energy information as related to the facade. </li>
-                        <li>A single HVAC system type, packaged single zone, is currently available.</li>
+                        <li>COMFEN is not a whole-building energy modeler. It is intended to get comparative energy
+                            information as related to the facade. </li>
+                        <li>Energy and costs reflect the performance from the perimeter zone (15-foot depth) only.
+                            Energy and cost should not be compared to whole-building performance.</li>
                     </ul>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- OTHER SECTION-->
-    <section id="other">
-        <div class="container">
-            <div class="row margin-top-50">
-                <div class="col-lg-10 mx-auto">
                     <p>
-                        Utility prices and emission factors are taken from the <a
+                        Utility prices (if not provided) and emission factors are taken from the <a
                             href="http://seeatcalc.gastechnology.org/CommercialBuildings" target="_blank">Source
                             Energy Emissions Analysis Tool</a>.
                     </p>
+
                 </div>
             </div>
         </div>
@@ -133,21 +123,19 @@
                 <div class="col-lg-10 mx-auto">
 
                     <h2>Objective of this Dashboard</h2>
-                    <p>The EnergyPlus simulation results were compiled using Python/Pandas and then formatted for
-                        export.
-                        Exported data was used in Tableau to create visualizations specific for this project. The
-                        visualizations are intended to 
-                        demonstrate the the benefits of the retrofit products provided by <a href="https://www.maineglass.com/" target="_blank">Maine Glass</a>.
+                    <p>
+                        The EnergyPlus simulation results were compiled using Python/Pandas and then formatted for
+                        export. Exported data was used in Tableau to create visualizations specific for this project.
+                        The visualizations are intended to demonstrate the the benefits of the retrofit products
+                        provided by
+                        <a href="https://www.maineglass.com/" target="_blank">Maine Glass</a>.
                     </p>
 
                 </div>
-
             </div>
     </section>
 
 
-
-S
     <!-- Footer-->
     <footer class="homefooter">
         <div class="container">

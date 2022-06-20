@@ -120,45 +120,33 @@ body {
 #mspMarriottAnnualViz1 {
   position: relative;
   height: 1300px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 
-#mspMarriottAnnualViz2 {
+#mspMarriottCarbonViz1 {
   position: relative;
-  /* height: 2550px; */
-  width: 100%;
+  height: 500px;
+  /* width: 100%; */
 }
 
 
 #mspMarriottPeakViz1 {
   position: relative;
   height: 500px;
-  width: 100%;
-}
-
-#mspMarriottPeakViz2 {
-  position: relative;
-  height: 200px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 #mspMarriottRetroViz1 {
   position: relative;
-  height: 450px;
-  width: 100%;
-}
-
-#mspMarriottRetroViz2 {
-  position: relative;
   height: 200px;
-  width: 100%;
+  /* width: 1000px; */
 }
 
 #spacer {
   position: relative;
-  height:  100%;
-  width: 100%;
+  /* height:  100%;
+  width: 100%; */
 }
 
 
