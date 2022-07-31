@@ -19,7 +19,7 @@ var map = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?a
 
 // ----------------------------------------------------------------- //
 // Links to get the geojson.
-var link = "static/js/map_OH_TX_MN.geojson";
+var link = "static/js/map_OH_TX_MN_CA.geojson";
 
 
 // ----------------------------------------------------------------- //

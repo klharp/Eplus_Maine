@@ -149,7 +149,29 @@ body {
   width: 100%; */
 }
 
+#mryAnnualViz1 {
+  position: relative;
+  height: 900px;
+  /* width: 100%; */
+} 
 
+#mryAnnualViz2 {
+  position: relative;
+  height: 600px;
+  /* width: 100%; */
+} 
+
+#mryPeakViz {
+  position: relative;
+  height: 550px;
+  width: 100%;
+}
+
+#mryRetroViz {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
 #SubNav {
   position: relative;
   background-color: rgba(69, 96, 128, 0.15);
