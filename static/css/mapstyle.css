@@ -155,6 +155,48 @@ body {
   /* width: 1000px; */
 }
 
+
+
+
+#MontereytAnnualViz1 {
+  position: relative;
+  height: 550px;
+  /* width: 100%; */
+}
+
+#MontereytAnnualViz2 {
+  position: relative;
+  height: 700px;
+  /* width: 100%; */
+}
+
+
+#MontereyCarbonViz1 {
+  position: relative;
+  height: 400px;
+  /* width: 100%; */
+}
+
+
+#MontereyPeakViz1 {
+  position: relative;
+  height: 400px;
+  /* width: 100%; */
+}
+
+#MontereyRetroViz1 {
+  position: relative;
+  height: 200px;
+  /* width: 1000px; */
+}
+
+#MontereyRetroViz2 {
+  position: relative;
+  height: 200px;
+  /* width: 1000px; */
+}
+
+
 #spacer {
   position: relative;
   /* height:  100%;
